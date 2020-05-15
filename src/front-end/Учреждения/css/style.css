@@ -312,18 +312,19 @@ h5 {
 
 .col-lg {
   padding: 0;
-  width: 400px;
-  height: 400px;
+  width: 250px;
+  height: 250px;
   border: 1px solid #b15234;
   border-radius: 20px;
   margin: 40px;
 }
 
 .bgColor {
-  margin-top: 200px;
+  margin-top: 125px;
   width: 100%;
-  height: 200px;
+  height: 125px;
   background: rgba(177, 82, 52, 0.75);
+  border-radius: 20px;
 }
 
 @media screen and (max-width: 992px) {
