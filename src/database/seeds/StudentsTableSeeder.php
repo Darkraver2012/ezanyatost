@@ -25,7 +25,7 @@ class StudentsTableSeeder extends Seeder
 //            ]);
 //        });
         for ($i = 1; $i < 6; $i++) {
-            $users = factory(App\User::class, 500)->create(['role_id' => 5]);
+            $users = factory(App\User::class, 400)->create(['role_id' => 5]);
             foreach ($users as $user) {
                 $student = \App\Student::create([
                     'user_id' => $user->id,
@@ -37,7 +37,7 @@ class StudentsTableSeeder extends Seeder
             }
         }
 
-        $users = factory(App\User::class, 150)->create(['role_id' => 5]);
+        $users = factory(App\User::class, 100)->create(['role_id' => 5]);
         foreach ($users as $user) {
             $student = \App\Student::create([
                 'user_id' => $user->id,
@@ -48,7 +48,7 @@ class StudentsTableSeeder extends Seeder
             ]);
         }
 
-        $users = factory(App\User::class, 300)->create(['role_id' => 5]);
+        $users = factory(App\User::class, 200)->create(['role_id' => 5]);
         foreach ($users as $user) {
             $student = \App\Student::create([
                 'user_id' => $user->id,
@@ -59,7 +59,7 @@ class StudentsTableSeeder extends Seeder
             ]);
         }
 
-        $users = factory(App\User::class, 150)->create(['role_id' => 5]);
+        $users = factory(App\User::class, 100)->create(['role_id' => 5]);
         foreach ($users as $user) {
             $student = \App\Student::create([
                 'user_id' => $user->id,

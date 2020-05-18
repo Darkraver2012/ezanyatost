@@ -1,7 +1,7 @@
 @extends('layouts.closed')
-@section('title', 'Добавить связь')
+@section('title', 'Добавить занятие')
 @section('content')
-    <h1>Добавить связь: Объединение - Учреждение</h1>
+    <h1>Добавить занятие</h1>
     @if (session('success'))
         <div class="alert alert-success">
             {{ session('success') }}
@@ -15,19 +15,7 @@
     <form method="post" action="/admin/activities">
         @csrf
         <div class="form-group">
-            <label>Объединение:</label>
-            <select name="association_id" class="form-control form-control-block">
-                <option value="">Выберите объединение</option>
-                @foreach($associations as $association)
-                    <option value="{{$association->id}}"
-                        {{ (old('association_id') == $association->id ? "selected":"") }}>
-                        {{$association->name}}
-                    </option>
-                @endforeach
-            </select>
-        </div>
-        <div class="form-group">
-            <label>Учреждение:</label>
+            <label>Учреждение</label>
             <select name="organisation_id" class="form-control form-control-block">
                 <option value="">Выберите учреждение</option>
                 @foreach($organisations as $organisation)
@@ -38,6 +26,22 @@
                 @endforeach
             </select>
         </div>
-        <button type="submit" class="btn btn-success">Добавить связь</button>
+        <div class="form-group">
+            <label>Направление</label>
+            <select name="course_id" class="form-control form-control-block">
+                <option value="">Выберите направление</option>
+                @foreach($courses as $course)
+                    <option value="{{$course->id}}" {{ (old('course_id') == $course->id ? "selected":"") }}>
+                        {{$course->name}}
+                    </option>
+                @endforeach
+            </select>
+        </div>
+        <div class="form-group">
+            <label>Объединение</label>
+            <input type="text" name="association"
+                   value="{{ old('association') }}" class="form-control form-control-block">
+        </div>
+        <button type="submit" class="btn btn-success">Добавить занятие</button>
     </form>
 @endsection
