@@ -309,23 +309,44 @@ h5 {
   display: block;
 }
 
+.row {
+  padding: 2% 5% 0 5%;
+}
+
+.display-set {
+  margin-top: 10px;
+  font-size: 40px;
+  font-weight: 500;
+  margin-bottom: 8px;
+  color: #fff;
+  text-align: center;
+}
 
 .col-lg {
   padding: 0;
-  width: 250px;
-  height: 250px;
+  width: 400px;
+  height: 400px;
   border: 1px solid #b15234;
   border-radius: 20px;
   margin: 40px;
 }
 
 .bgColor {
-  margin-top: 125px;
+  position: absolute;
+  top: 200px;
   width: 100%;
-  height: 125px;
+  height: 200px;
   background: rgba(177, 82, 52, 0.75);
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+.col-lg img {
+  width: 100%;
+  height: 100%;
   border-radius: 20px;
 }
+
 
 @media screen and (max-width: 992px) {
   .row {
