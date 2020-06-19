@@ -1,0 +1,149 @@
+.header-wrapper {
+	position: fixed;
+  	z-index: 1000;
+	width: 100%;
+	box-shadow: 0 4px 12px rgba(0, 0, 0, .05);
+	background-color: #EBEBEB;
+}
+.btn{
+	font-size: 16px;
+	font-family: inherit;
+	background-color: transparent;
+	border: 1px solid transparent;
+	border-radius: 4px;
+	text-decoration: none;
+	padding: 6px 12px;
+	transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+.header {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	flex-wrap: wrap;
+	padding: 4px 20px;
+	padding-top:10px;
+	min-height: 90px;
+	background-color: #EBEBEB;
+}
+
+/* LOGO */
+.header-logo {
+	/*
+	background-color: palegreen;
+	*/
+	width: 220px;
+	height: 60px;
+	
+} 
+.header-logo img {
+	width: 220px;
+	vertical-align: bottom;
+} 
+
+/* NAVIGATION */
+.header-navigation li {
+	display: inline-block;
+}
+
+.link-secondary{
+	padding-left: 8px;
+	padding-right: 8px;
+}
+
+.header-navigation .link-secondary i{
+	margin-left: 4px;
+	color: #1c1c1c;
+}
+
+.header-navigation .btn i{
+	margin-right: 4px;
+}
+
+.header .nav-open {
+	display: block;
+}
+
+/* DROPDOWN */
+.dropdown-menu {
+	display: none;
+	position: absolute;
+    background-color: #ffffff;
+    border: 1px solid rgba(0,0,0,.15);
+    border-radius: 4px;
+	padding: 8px 0;
+	top: 48px;
+}
+
+.header-navigation .dropdown-item {
+	display: block;
+	padding: 8px 24px;
+}
+
+.header-navigation .dropdown-item:hover {
+	background-color: rgba(0,0,0,.02);
+	text-decoration: none;
+}
+
+/*
+.dropdown-link:hover .dropdown-menu { 
+	display: block; 
+}
+*/
+.header-row{
+	width: 100%;
+	margin: 0 auto;
+	max-width: 1440px;
+	padding: 0 60px;	
+	background-color: #EBEBEB;
+}
+/* BARS */
+.header-bars {
+	display: none;
+	cursor: pointer;
+}
+
+.header-bars i {
+	font-size: 24px;
+}
+@media screen and (max-width: 1000px) {
+	.header-row{
+		width: 100%;
+		margin: 0 auto;
+		padding:15px 10px;	
+	}
+}
+@media screen and (max-width: 830px) {
+	.header-navigation {
+		flex-basis: 100%;
+		overflow: hidden;
+		display: none;
+	}
+	
+	.header-navigation nav {
+		margin: 4px 0;
+	}
+	
+	.header-navigation li, .header-navigation .link-secondary {
+		display: block;
+	}
+	
+	.header-navigation .btn {
+		display: inline-block;
+	}	
+	
+	.header-bars {
+		display: inline-block;
+		padding-right: 10px;
+	}
+	
+	.dropdown-menu {
+		position: static;
+	}	
+	.link-secondary{
+		padding-top: 20px;
+		padding-bottom: 20px;
+		text-align: center;
+	}
+	
+}
