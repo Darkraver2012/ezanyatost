@@ -11,7 +11,7 @@
   <title>E-Занятость</title>
   <link rel="shortcut icon" href="media/favicon.ico" type="image/x-icon">
   <script src="js/burger_scroll.js"></script>
-  <link href="css/style.css" rel="stylesheet">
+  <link href="css/organisations.css" rel="stylesheet">
   <link href="css/header.css" rel="stylesheet">
   <link href="css/footer.css" rel="stylesheet">
 </head>
@@ -21,7 +21,7 @@
     <header class="header-wrapper">
       <div class="container header">
         <div class="header-logo">
-          <img src="media/logo.png">
+          <a href="index.html"><img src="media/logo.png"></a>
         </div>
         <div class="header-bars">
           <i class="fas fa-bars"></i>
@@ -29,11 +29,11 @@
         <div class="header-navigation">
           <nav>
             <ul>
-              <li><a href="/" class="link-secondary">Главная</a></li>
-              <li><a href="" class="link-secondary">Учреждения</a></li>
-              <li><a href="" class="link-secondary">Мероприятия</a></li>
-              <li><a href="" class="link-secondary">Контакты</a></li>
-              <li><a href="" class="btn btn-outline-primary"><i class="fas fa-user"></i> Личный кабинет</a></li>
+              <li><a href="index.html" class="btn btn-outline-dark">Главная</a></li>
+              <li><a href="organisations.html" class="btn btn-outline-dark">Учреждения</a></li>
+              <li><a href="events.html" class="btn btn-outline-dark">Мероприятия</a></li>
+              <li><a href="contacts.html" class="btn btn-outline-dark">Контакты</a></li>
+              <li><a href="" class="btn btn-outline-dark"><i class="fas fa-user"></i> Личный кабинет</a></li>
             </ul>
           </nav>
         </div>
@@ -133,30 +133,29 @@
       </div>
     </main>
 
-    <footer class="footer">
-      <section class="container footer-upper">
-        <div class="footer-nav">
-          <h5>Навигация</h5>
-          <a href="/" class="link-primary">Главная</a>
-          <a href="" class="link-primary">Учреждения</a>
-          <a href="" class="link-primary">Мероприятия</a>
-          <a href="" class="link-primary">Контакты</a>
-          <a href="/login" class="link-primary">Личный кабинет</a>
-        </div>
-        <div class="footer-info">
-          <h5>Правовая информация</h5>
-          <a href="" class="link-primary">Лицензионное соглашение</a>
-          <a href="" class="link-primary">Политика обработки персональных данных</a>
-          <a href="" class="link-primary">Авторские права</a>
-        </div>
-        <div class="footer-gototop">
-          <a href="javascript:void(0);" class="link-primary">Наверх<i class="fas fa-angle-up"></i></a>
-        </div>
-      </section>
-      <section class="container footer-lower">
-        <p>Московский Политехнический Университет.</p>
-      </section>
-    </footer>
+    <div class="footer">
+      <div class="footer-inner">
+          <div class="bassement-legal-info-block">
+              <div class="bassement-legal-info-header">
+                  <b>Правовая информация</b>
+              </div>
+  
+                  <div class="bassement-legal-info-content">
+                  <ul>
+                      <li><a href="">Лицензионное соглашение</a></li>
+                      <li><a href="">Политика обработки персональных данных</a></li>
+                      <li><a href="">Авторски права</a></li>
+                  </ul>
+                  </div>
+                  <div class="footer-gototop">
+                      <a href="javascript:void(0);" class="link-primary">Наверх <i class="fas fa-angle-up"></i></a>
+                  </div>
+          </div>
+          <div class="bassement-info">
+              <a href="http://mospolytech.ru"><img class="polytech_logo" src="img/polytech_logo.png" alt="Московский политехнический университет"></a>
+          </div>
+      </div>
+  </div>
   </div>
 
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>

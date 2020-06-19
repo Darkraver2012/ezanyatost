@@ -2,64 +2,35 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
-	<link rel="stylesheet" href="css/events.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/events.css">
 	<link rel="stylesheet" href="css/header.css">
 	<link rel="stylesheet" href="css/footer.css">
 	<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
 	<title>E-Zанятость | Мероприятия</title>
 	<script src="burger_scroll.js"></script>
 </head>
+<div class="wrapper">
 <div class="header-wrapper">
-	<div class="header-row header">
-		<div class="header-logo">
-			<a href="index.html"><img src="img/logo.png"></a>
-		</div>
-		<div class="header-bars">
-			<i class="fas fa-bars"></i>
-		</div>
-		<div class="header-navigation">
-			<nav>
-				<ul>
-					<li>
-						<a href="index.html" class="link-secondary">
-							Главная
-						</a>
-					</li>
-					<li class="dropdown-link">
-						<a href="organisations.html" class="link-secondary">
-							Учреждения
-						</a>
-						<!--
-					    <div class="dropdown-menu">
-							<a class="dropdown-item nav-link" href="#">Учреждение 1</a>
-							<a class="dropdown-item nav-link" href="#">Учреждение 2</a>
-							<a class="dropdown-item nav-link" href="#">Учреждение 3</a>
-							<a class="dropdown-item nav-link" href="#">Учреждение 4</a>
-							<a class="dropdown-item nav-link" href="#">Учреждение 5</a>
-							<a class="dropdown-item nav-link" href="#">Учреждение 6</a>
-						</div>
-						-->
-					</li>
-					<li>
-						<a href="events.html" class="link-secondary">
-							Мероприятия
-						</a>
-					</li>
-					<li>
-						<a href="contacts.html" class="link-secondary">
-							Контакты
-						</a>
-					</li>
-					<li>
-						<a href="auth.php" class="link-secondary">
-							<!--<i class="fas fa-user"></i>-->
-							Личный кабинет
-						</a>
-					</li>
-				</ul>
-			</nav>
-		</div>
-	</div>			
+    <div class="container header">
+      <div class="header-logo">
+        <a href="index.html"><img src="media/logo.png"></a>
+      </div>
+      <div class="header-bars">
+        <i class="fas fa-bars"></i>
+      </div>
+      <div class="header-navigation">
+        <nav>
+          <ul>
+            <li><a href="index.html" class="btn btn-outline-dark">Главная</a></li>
+            <li><a href="organisations.html" class="btn btn-outline-dark">Учреждения</a></li>
+            <li><a href="events.html" class="btn btn-outline-dark">Мероприятия</a></li>
+            <li><a href="contacts.html" class="btn btn-outline-dark">Контакты</a></li>
+            <li><a href="" class="btn btn-outline-dark"><i class="fas fa-user"></i> Личный кабинет</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
 </div>
 
 <main class="main">
@@ -175,6 +146,7 @@
                         </a>
                     </div>
                 </div>
+                <button class="btn btn-outline-dark">Загрузить ещё</button>
             </div>
         </section>
 </main>
@@ -197,7 +169,8 @@
                 </div>
         </div>
         <div class="bassement-info">
-            Московский политехнический университет
+            <a href="http://mospolytech.ru"><img class="polytech_logo" src="img/polytech_logo.png" alt="Московский политехнический университет"></a>
         </div>
     </div>
+</div>
 </div>	
