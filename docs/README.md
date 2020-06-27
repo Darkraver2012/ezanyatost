@@ -15,3 +15,5 @@
 - [Репозиторий](https://github.com/Darkraver2012/ezanyatost)
 - [Приглашение в чат в WhatsApp](https://chat.whatsapp.com/GG2JHETbjkr0TkxHgxx5DT)
 - [Видео](https://youtu.be/aYltFVJDO90)
+- [Концепт обновленной открытой части](http://ez-concept.std-913.ist.mospolytech.ru/)
+- [Текущий вариант дизайна и закрытая часть сайта](http://ci12999.tmweb.ru/)
