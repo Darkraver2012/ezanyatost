@@ -1,57 +1,58 @@
 .footer {
-	color: white;
-	background-color:black;	
+	background-color: #000000;	
 	padding: 16px 0;
 	width: 100%;
     border-top: 0.8px solid #e5e5e5;
+    
 
 }
 .no-bc{
-	background-color: #F0CEDE;
-}
-.polytech_logo{
-	width: 384px;
+	background-color: #000000;
 }
 .footer-inner{
-	align-items: center;
-	display: grid;
-	grid-template-areas: "left_block right_block";
 	padding: 0 60px;
 	margin: 0 auto;
 	max-width: 1440px;
 	width: 100%;
 }
 .bassement-legal-info-block{
-	grid-area: "left_block";
 	padding: 10px 0;
 }
 .bassement-legal-info-header{
 	font-size: 15pt;
-	color: white;
+	color: #ffffff;
 	padding: 5px 0 10px 0;
 }
+
+.bassement-legal-info-block {
+	float: left;
+}
+
 .bassement-legal-info-content li{
 	list-style: none;
 	margin: 0;
 	padding: 0;
 }
 .bassement-legal-info-content a{
-	color: white;
+	color: #ffffff;
 	text-decoration: none;
 	transition: 0.3s;
 }
 .bassement-legal-info-content a:hover{
-	color: white;
+	color: #cccccc;
 	text-decoration: none;
 	transition: 0.3s;
 }
 .bassement-info{
-	grid-area: "right_block";
 	margin: 0 auto;
 	color: white;
-	width: 50%;
-	text-align: right;
+	width: 30%;
 }
+
+.polytech_logo {
+    width: 500px;
+}
+
 @media screen and (max-width: 1000px) {
 	.footer-inner{
 		padding: 0 10px;
@@ -88,14 +89,6 @@
 	
 	.footer-upper div:nth-child(1), .footer-upper div:nth-child(2){
 		margin-bottom: 16px;
-	}
-	.footer-inner{
-		grid-template-areas: "left_block"
-							"right_block";
-							
-	}
-	.polytech_logo{
-		width: 100%;
 	}
 }
 .footer-gototop{
